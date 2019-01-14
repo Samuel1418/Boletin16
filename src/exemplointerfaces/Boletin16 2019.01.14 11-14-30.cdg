@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Boletin16">
+  <ClassDiagramComponents>
+    <Class name="Canario" package="exemplointerfaces" visibility="public" xPosition="668.0" yPosition="221.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="cantar" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="ExemploInterfaces" package="exemplointerfaces" visibility="public" xPosition="633.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Galo" package="exemplointerfaces" visibility="public" xPosition="930.0" yPosition="221.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="cantar" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Persoa" package="exemplointerfaces" visibility="public" xPosition="1189.0" yPosition="221.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="cantar" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Tenor" package="exemplointerfaces" visibility="public" xPosition="1189.0" yPosition="399.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Interface name="IpodeCantar" package="exemplointerfaces" visibility="public" xPosition="920.0" yPosition="20.0">
+      <Methods>
+        <Method name="cantar" returnType="void" visibility="public" isAbstract="true"/>
+      </Methods>
+    </Interface>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="exemplointerfaces.Canario" target="exemplointerfaces.IpodeCantar"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="exemplointerfaces.Persoa" target="exemplointerfaces.IpodeCantar"/>
+    <IsRelation name="is" source="exemplointerfaces.Tenor" target="exemplointerfaces.Persoa"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="exemplointerfaces.Galo" target="exemplointerfaces.IpodeCantar"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
